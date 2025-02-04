@@ -180,6 +180,12 @@ a.tl {
 
 /* smartphone */
 @media only screen and (max-width: 900px) {
+  a:hover, .did:hover, .scyt:hover ~ .did, .scyt:hover ~ .tl , .scyt:hover ~ .bd, .tl:hover ~ .bd {
+    color: inherit;
+    -webkit-text-stroke: inherit;
+    text-shadow: initial;
+  }
+  
   #cnt {
     top: 40px;
     left: 0;
