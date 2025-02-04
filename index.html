@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhizome</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/x-icon" href="data/rr-fav.ico">
+</head>
+
+<body>
+  <!-- header -->
+  <header id="hd">
+    <p><a onclick="tglCl()">Rhizome</a></p>
+    <nav id="cnt">
+      <p><a onclick="tglEv()">Events</a></p>
+      <p><a onclick="tglEd()">Editorial</a></p>
+      <p><a onclick="tglPd()">Products</a></p>
+      <p><a onclick="tglAb()">About</a></p>
+    </nav>
+
+    <!--<p id="crdt">Design: <a href="mailto:">Giovanni Difronzo</a> and <a href="mailto:">Felipe Minicucci</a>. Web development: <a href="mailto:">Felipe Minicucci</a>.</p>-->
+  </header>
+
+  <!-- contacts + calendar -->
+  <section id="lnk">
+    <p><a href="https://www.instagram.com/rhizome.rm/p/DFfUGI6tX-z/" target="_blank">Calendar</a></p>
+    <p><a onclick="tglLnk()">Contacts</a></p>
+
+    <div id="lnkCnt">
+      <p><a href="https://www.instagram.com/rhizome.rm/" target="_blank">Instagram</a></p>
+      <p><a href="https://soundcloud.com/rhizomerm" target="_blank">SoundCloud</a></p>
+      <p><a href="https://open.spotify.com/show/3fB84a8xXv74Ae6f3UZLKa?si=b630ff8be47d4f59" target="_blank">Spotify</a></p>
+      <p><a href="https://www.youtube.com/@rhizomeradio" target="_blank">YouTube</a></p>
+      <p><a href="mailto:hello@rhizomerm.com">Mail</a></p>
+    </div>
+  </section>
+
+  <!-- events -->
+  <section id="ev" style="display: none;">
+    <div id="ev-139" class="evnt">
+      <p class="did">Edo Tetsuo<span class="dnt">Rhizome, Rome</span><span class="dmy">7.2.2025</span></p>
+    </div>
+    <div id="ev-138" class="evnt">
+      <p class="did">Prest<span class="dnt">Rhizome, Rome</span><span class="dmy">3.2.2025</span></p>
+    </div>
+    <div id="ev-137" class="evnt">
+      <p class="did">Jay Duncan<span class="dnt">Rhizome, Rome</span><span class="dmy">3.2.2025</span></p>
+    </div>
+    <div id="ev-136" class="evnt">
+      <p class="did">ORKS<span class="dnt">Rhizome, Rome</span><span class="dmy">25.1.2025</span></p>
+    </div>
+    <div id="ev-135" class="evnt">
+      <p class="did">Souplesse Tempo Sounds: Boring Tables<span class="dnt">Rhizome, Rome</span><span class="dmy">24.1.2025</span></p>
+    </div>
+    <div id="ev-134" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/min_ed_rhizome?si=7b00c28791f94b5592c28f494b9869c0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Min-Ed<span class="dnt">Rhizome, Rome</span><span class="dmy">18.1.2025</span></p>
+    </div>
+    <div id="ev-133" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pecci_moesha13_rhizome?si=2a8feadafa7e43d18da453bf69a0edba&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Giulio Pecci w/ MOESHA 13<span class="dnt">Rhizome, Rome</span><span class="dmy">18.1.2025</span></p>
+    </div>
+    <div id="ev-132" class="evnt">
+      <p class="did">Mule Musiq Release Party: Leo Benassi<span class="dnt">Rhizome, Rome</span><span class="dmy">17.1.2025</span></p>
+    </div>
+    <div id="ev-131" class="evnt">
+      <p class="did">Mule Musiq Release Party: Lorenzo Dada<span class="dnt">Rhizome, Rome</span><span class="dmy">17.1.2025</span></p>
+    </div>
+    <div id="ev-130" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/dante_rhizome?si=3214305e45104f4986b15f727dac1eb8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Dante<span class="dnt">Rhizome, Rome</span><span class="dmy">15.1.2025</span></p>
+    </div>
+    <div id="ev-129" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/powcha_rhizome?si=dd70a5c8ccee449782ecfc2dbb4f263d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Pochwa<span class="dnt">Rhizome, Rome</span><span class="dmy">10.1.2025</span></p>
+    </div>
+    <div id="ev-128" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/bruce-waves-rhizome?si=51d3b6c6cd48478fab6ff8c2277853e6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Souplesse Tempo Sounds: Bruce Waves<span class="dnt">Rhizome, Rome</span><span class="dmy">27.12.2024</span></p>
+    </div>
+    <div id="ev-127" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/lichene-rhizome?si=23febc59ab5048d2854e2b7ac2a03736&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Lichene &mdash; Freeform Music Selection:<br>Filippo Scorcucchi, Sandra Mason, Skeno<span class="dnt">Rhizome, Rome</span><span class="dmy">22.12.2024</span></p>
+    </div>
+    <div id="ev-126" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/conna-haraway-rhizome?si=4efa7581c9074950ba0021d7a05e2c3b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">CHANTSSSS invites Conna Haraway<span class="dnt">Rhizome, Rome</span><span class="dmy">21.12.2024</span></p>
+    </div>
+    <div id="ev-125" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/loris-ligonzo-rhizome?si=783ed7503bdb4d16bbfc716a099fb0b1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Loris Ligonzo<span class="dnt">Rhizome, Rome</span><span class="dmy">20.12.2024</span></p>
+    </div>
+    <div id="ev-124" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/rubbersoul-rhizome?si=2437d9d8aa1d48e4a901f65e92d186a4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Rubber Soul<span class="dnt">Rhizome, Rome</span><span class="dmy">19.12.2024</span></p>
+    </div>
+    <div id="ev-123" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/akiko-bush-rhizome?si=a5540076b5404263877f922e213e24a5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Akiko + Bush<span class="dnt">Rhizome, Rome</span><span class="dmy">17.12.2024</span></p>
+    </div>
+    <div id="ev-122" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/gvsto-rhizome-1?si=45e9f81d5446494bb71f01fdc6df268d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Gvsto<span class="dnt">Rhizome, Rome</span><span class="dmy">12.12.2024</span></p>
+    </div>
+    <div id="ev-121" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/telesm-macacndgm?si=b2af530c9d06400992c0fef0c4de49c5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Telesm focus on mcacndgm<span class="dnt">Rhizome, Rome</span><span class="dmy">30.11.2024</span></p>
+    </div>
+    <div id="ev-120" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pyteca?si=7b4570a41c1f488c8a38d5dd114e0c5e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Pyteca Showcase: Omis Elegia<span class="dnt">Rhizome, Rome</span><span class="dmy">6.12.2024</span></p>
+    </div>
+    <div id="ev-119" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/vincenzo-pizzi?si=712649a4dbe74143b7ab8b1b5321adf9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Pyteca Showcase: Vincenzo Pizzi<span class="dnt">Rhizome, Rome</span><span class="dmy">6.12.2024</span></p>
+    </div>
+    <div id="ev-118" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pecci-shut-up?si=9d03a83f149e4c0a93c33a50b71c6e46&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Giulio Pecci: Shut Up and Dance<span class="dnt">Rhizome, Rome</span><span class="dmy">5.12.2024</span></p>
+    </div>
+    <div id="ev-117" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/jam-factory-rhizome?si=0c901fcdef8a49778aee0e3c7720ab31&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Jam Factory the festival preview (mixshow)<span class="dnt">Rhizome, Rome</span><span class="dmy">28.11.2024</span></p>
+    </div>
+    <div id="ev-116" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/hot-kowski-rhizome?si=46c25c03a94f440096aedb104d3a401a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">HOT KOWSKI (Funclab Records)<span class="dnt">Rhizome, Rome</span><span class="dmy">27.11.2024</span></p>
+    </div>
+    <div id="ev-115" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/sets/stochastic-resonance-23?si=ef0864b09088454ca175ca16453f63b9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Stochastic Resonance Showcase (Day 2)<span class="dnt">Rhizome, Rome</span><span class="dmy">23.11.2024</span></p>
+    </div>
+    <div id="ev-114" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/oak9000-rhizome?si=73051bf6512d470b953edc9c343deb43&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Oak9000<span class="dnt">Rhizome, Rome</span><span class="dmy">23.11.2024</span></p>
+    </div>
+    <div id="ev-113" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/sets/stochastic-resonance-22-nov?si=08b5e9232ae84fd79a3ce800165617ec&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Stochastic Resonance Showcase (Day 1)<span class="dnt">Rhizome, Rome</span><span class="dmy">22.11.2024</span></p>
+    </div>
+    <div id="ev-112" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/portamento-rhizome?si=38f43af74d6d4e3d90c47881c1456cde&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Portamento <span class="dnt">Rhizome, Rome</span><span class="dmy">20.11.2024</span></p>
+    </div>
+    <div id="ev-111" class="evnt">
+      <p class="did">Corbelli Orchestra live act<span class="dnt">Rhizome, Rome</span><span class="dmy">16.11.2024</span></p>
+    </div>
+    <div id="ev-110" class="evnt">
+      <p class="did">Polysick live<span class="dnt">Rhizome, Rome</span><span class="dmy">15.11.2024</span></p>
+    </div>
+    <div id="ev-109" class="evnt">
+      <p class="did">Giulia Crispiani performance<span class="dnt">Rhizome, Rome</span><span class="dmy">14.11.2024</span></p>
+    </div>
+    <div id="ev-108" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/marco-ragni-ok-rhizome?si=2c7d8e9527564fd399bf8c78db7fb30f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Marco Ragni<span class="dnt">Rhizome, Rome</span><span class="dmy">13.11.2024</span></p>
+    </div>
+    <div id="ev-107" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/sandra-mason-rhizome?si=3988c541fdb2447484f6f8cb1b4effb2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Sandra Mason<span class="dnt">Rhizome, Rome</span><span class="dmy">13.11.2024</span></p>
+    </div>
+    <div id="ev-106" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/slyn-rhizome?si=99f9271d185145f8ba00819ba850376b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Slyn<span class="dnt">Rhizome, Rome</span><span class="dmy">13.11.2024</span></p>
+    </div>
+    <div id="ev-105" class="evnt">
+      <p class="did">SSIEGE<span class="dnt">Rhizome, Rome</span><span class="dmy">12.11.2024</span></p>
+    </div>
+    <div id="ev-104" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/caizzi-rhizome?si=6f061bfbe8514b1fad46c77ef05c9988&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Marco Caizzi<span class="dnt">Rhizome, Rome</span><span class="dmy">9.11.2024</span></p>
+    </div>
+    <div id="ev-103" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/miele-rhizome?si=3370a68492774c159354e151c94718b0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Miele<span class="dnt">Rhizome, Rome</span><span class="dmy">8.11.2024</span></p>
+    </div>
+    <div id="ev-102" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/usof-rhizome?si=d58294bbe52d4cfa8f805df761af364c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">usof<span class="dnt">Rhizome, Rome</span><span class="dmy">7.11.2024</span></p>
+    </div>
+    <div id="ev-101" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/coolor_rhizome?si=3fc588ba20464152abb3d864395c8517&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Liquid Ruum w/ Coolor<span class="dnt">Rhizome, Rome</span><span class="dmy">25.10.2024</span></p>
+    </div>
+    <div id="ev-100" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/gigi_rhizome?si=886a76f97cde4defb0898b01b48d1d72&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Gi Gi<span class="dnt">Rhizome, Rome</span><span class="dmy">22.10.2024</span></p>
+    </div>
+    <div id="ev-099" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pants-are-yellow_junglism?si=e9dee26310494a259e80b096d3bab7d7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">pants are yellow: official junglism experience<span class="dnt">Rhizome, Rome</span><span class="dmy">11.10.2024</span></p>
+    </div>
+    <div id="ev-098" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/ale-b_rhizome?si=fa5ef050bf494482af2d2779bc6c9287&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Ale B<span class="dnt">Rhizome, Rome</span><span class="dmy">10.10.2024</span></p>
+    </div>
+    <div id="ev-097" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pachino_rhizome?si=64469ca3435b43a1bfd02770eeeb67e0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Pachino Focus on Permanent Vacation<span class="dnt">Rhizome, Rome</span><span class="dmy">5.10.2024</span></p>
+    </div>
+    <div id="ev-096" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/gvsto-rhizome?si=b70b6137267d46a5bb767a9167ef6432&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Gvsto<span class="dnt">Rhizome, Rome</span><span class="dmy">4.10.2024</span></p>
+    </div>
+    <div id="ev-095" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/afrikancola-rhizome?si=86471346bd304a98abf9bdb7fc23eb55&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Afrikan Cola<span class="dnt">Rhizome, Rome</span><span class="dmy">28.9.2024</span></p>
+    </div>
+    <div id="ev-094" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pecci-mediterraneo-rhizome?si=e3d7c1e92bc246c9bc1066f2faa20c31&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Giulio Pecci: Mediterraneo<span class="dnt">Rhizome, Rome</span><span class="dmy">27.9.2024</span></p>
+    </div>
+    <div id="ev-093" class="evnt">
+      <p class="did">luna.corp (talk + selecta)<span class="dnt">Rhizome, Rome</span><span class="dmy">20.9.2024</span></p>
+    </div>
+    <div id="ev-092" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/chicco-musica-1?si=9efadb1594f647fe8b1691d739f488d9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Prest<span class="dnt">Rhizome, Rome</span><span class="dmy">19.9.2024</span></p>
+    </div>
+    <div id="ev-091" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/lowe-rhizome?si=3acb289d55b34753ad10ebf847538781&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Lewis Lowe<span class="dnt">Rhizome, Rome</span><span class="dmy">19.9.2024</span></p>
+    </div>
+    <div id="ev-090" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/hermeneia-rhizome?si=be270aa6afb0451da8e2577537d7ae4e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Hermenia<span class="dnt">Rhizome, Rome</span><span class="dmy">17.9.2024</span></p>
+    </div>
+    <div id="ev-089" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/dj-lyster?si=85c8a6270a20453d83f862aef02a7900&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Youth ( Dj Lyster )<span class="dnt">Rhizome, Rome</span><span class="dmy">14.09.2024</span></p>
+    </div>
+    <div id="ev-088" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/cyma-live?si=5f45ddc6427445519fc59eaac1ff246b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Cyma live<span class="dnt">Rhizome, Rome</span><span class="dmy">13.9.2024</span></p>
+    </div>
+    <div id="ev-087" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/tactus-live?si=5e4b953682a943c18b01ec6d6912f619&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Tactus live<span class="dnt">Rhizome, Rome</span><span class="dmy">12.9.2024</span></p>
+    </div>
+    <div id="ev-086" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/chicco-musica?si=097d8dfad9fa415590a4b77933244b15&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Chicco Musica <span class="dnt">Rhizome, Rome</span><span class="dmy">11.9.2024</span></p>
+    </div>
+    <div id="ev-085" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/ciaic-centrale-mast?si=4fa035dc552a4325a331b9a52d0607cc&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Mast Festival: Ciac<span class="dnt">Centrale Mast, Scicli</span><span class="dmy">7.8.2024</span></p>
+    </div>
+    <div id="ev-084" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/coolor-mast-1?si=a01260698319404a8fee0bc6bf603514&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Mast Festival: Coolor<span class="dnt">Centrale Mast, Scicli</span><span class="dmy">6.8.2024</span></p>
+    </div>
+    <div id="ev-083" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/claudio-mast?si=042bb5bb354d4217bf9e4c6843581e21&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Mast Festival: Claudio Maura<span class="dnt">Centrale Mast, Scicli</span><span class="dmy">5.8.2024</span></p>
+    </div>
+    <div id="ev-082" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/suq-soundsystem-mast?si=1189ddeeb60e4820adf3c98d02577b12&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Mast Festival: Suq Soundsystem <span class="dnt">Centrale Mast, Scicli</span><span class="dmy">4.8.2024</span></p>
+    </div>
+    <div id="ev-081" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/boring-tables-mast?si=90fbdb3cdf694a1f8a503c93de5ed5c6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Mast Festival: Boring Tables <span class="dnt">Centrale Mast, Scicli</span><span class="dmy">2.8.2024</span></p>
+    </div>
+    <div id="ev-080" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/luca-colle-rhizome?si=e7d5e8322ce44eba8668258324748a10&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Focus on Post Rock /letfield with Luca Collepiccolo<span class="dnt">Rhizome, Rome</span><span class="dmy">24.7.2024</span></p>
+    </div>
+    <div id="ev-079" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/albini-talk?si=a29fa1717c6c4d81a83fa814fd48e14c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Steve Albini is floating in space (live talk)<span class="dnt">Rhizome, Rome</span><span class="dmy">18.7.2024</span></p>
+    </div>
+    <div id="ev-078" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/bmbx-rhizome?si=1a6c8e23fae54dbea29bc3c3535dc6f8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Nero Editions: Bmbx music selection<span class="dnt">Rhizome, Rome</span><span class="dmy">11.7.2024</span></p>
+    </div>
+    <div id="ev-077" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/lab-palestro-rhizome?si=6465487f9f224ea395b8fdf7b8e66297&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Laboratorio Palestro<span class="dnt">Rhizome, Rome</span><span class="dmy">10.7.2024</span></p>
+    </div>
+    <div id="ev-076" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pants-are-yellow?si=4d7fcb5790a34d14865f0d7f2527a235&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">pants are yellow<span class="dnt">Rhizome, Rome</span><span class="dmy">29.6.2024</span></p>
+    </div>
+    <div id="ev-075" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/telesm?si=b888209e597e4ef2a51678cb696136ec&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Telesm<span class="dnt">Rhizome, Rome</span><span class="dmy">28.6.2024</span></p>
+    </div>
+    <div id="ev-074" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/mira-vivian?si=6904d2f7236742608b6a85fe04a9071f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Mira Vivian<span class="dnt">Rhizome, Rome</span><span class="dmy">28.6.2024</span></p>
+    </div>
+    <div id="ev-073" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/dhavv?si=7d9b9685380a49c284c5ebd05d5d9ccf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Dhavv<span class="dnt">Rhizome, Rome</span><span class="dmy">28.6.2024</span></p>
+    </div>
+    <div id="ev-072" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/luca-fitzgerald-live?si=c826d7b8c374402eaf38a1db5ab65555&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Luca Fitzgerald live<span class="dnt">Rhizome, Rome</span><span class="dmy">28.6.2024</span></p>
+    </div>
+    <div id="ev-071" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/leonardo-metz?si=f624937ceb7a4c48ab16b94b0e41110c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Leonardo Metz live<span class="dnt">Rhizome, Rome</span><span class="dmy">28.6.2024</span></p>
+    </div>
+    <div id="ev-070" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/42-cent-hotline-live?si=0f94540fa8c343ec8dabf5c3334f6cff&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">42 Cent Hotline live<span class="dnt">Rhizome, Rome</span><span class="dmy">28.6.2024</span></p>
+    </div>
+    <div id="ev-069" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/niglio-live?si=54ab8157a7ce4bfc9d53f3414feb1db5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Niglio (live)<span class="dnt">Rhizome, Rome</span><span class="dmy">27.6.2024</span></p>
+    </div>
+    <div id="ev-068" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/matteostella?si=092b2109085f4a54abf293d115b3d1b6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Matteo Stella<span class="dnt">Rhizome, Rome</span><span class="dmy">27.6.2024</span></p>
+    </div>
+    <div id="ev-067" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/vatieri?si=64a5e885f58c4dbd95e2a83e2395ccc4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Fabrizio Vatieri<span class="dnt">Rhizome, Rome</span><span class="dmy">21.6.2024</span></p>
+    </div>
+    <div id="ev-066" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/brividee?si=20d296b91b954f69ae49889397547504&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">brividee<span class="dnt">Rhizome, Rome</span><span class="dmy">21.6.2024</span></p>
+    </div>
+    <div id="ev-065" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/dj-delusion?si=f4eed24e4e964523893a919050e4d5ab&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Dj Delusion<span class="dnt">Rhizome, Rome</span><span class="dmy">21.6.2024</span></p>
+    </div>
+    <div id="ev-064" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/keeba-digital?si=99d5161d91c240d588930c2c5f495b0d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Keeba Digital<span class="dnt">Rhizome, Rome</span><span class="dmy">21.6.2024</span></p>
+    </div>
+    <div id="ev-063" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/felipe-rhizome-radio?si=4c78bf1634af43b0a34d23b9a044f8ec&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">le baccanti<span class="dnt">Rhizome, Rome</span><span class="dmy">15.6.2024</span></p>
+    </div>
+    <div id="ev-062" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/giovanni-rhizome-ok?si=b38f82373a5345538e76c9d34e6ea0ed&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">gvonniai<span class="dnt">Rhizome, Rome</span><span class="dmy">14.6.2024</span></p>
+    </div>
+    <div id="ev-061" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/focus-on-incienso-with-prest-avanvera?si=c28ffc4a55c64f1ea028143d8005c2d8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Focus on Incienso with Prest<span class="dnt">Avanvera, Rome</span><span class="dmy">5.6.2024</span></p>
+    </div>
+    <div id="ev-060" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/riccardo-papacci?si=d1d037b16e564ccfa15be70de9530576&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Riccardo Papacci<span class="dnt">Avanvera, Rome</span><span class="dmy">22.5.2024</span></p>
+    </div>
+    <div id="ev-059" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/sister-effect?si=eb9d3cf5448c4e099a085831cc7f6078&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/elLxBOSKRTY?si=kmqr2xyuXnWf6i6M" target="_blank">YT</a></p>
+      <p class="did">Sister Effect<span class="dnt">Soffio, Fregene</span><span class="dmy">19.5.22024</span></p>
+    </div>
+    <div id="ev-058" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/edo-tetsuo?si=829c41860ac54a9cb60de24718f3e941&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Edo Tetsuo<span class="dnt">Avanvera, Rome</span><span class="dmy">8.5.2024</span></p>
+    </div>
+    <div id="ev-057" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/jomoon-city-pop-avanvera?si=17464aa41e094c3fac44e2b75c78505a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Focus on City Pop with Jomoon<span class="dnt">Avanvera, Rome</span><span class="dmy">24.4.2024</span></p>
+    </div>
+    <div id="ev-056" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/avanvera-10-aprile-ninette?si=0db03cc589304de480f9181c505f99ba&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Ninette<span class="dnt">Avanvera, Rome</span><span class="dmy">10.4.2024</span></p>
+    </div>
+    <div id="ev-055" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/focus-on-on-deep-medi-musik-with-prest-and-xl-regular-x-rhizome-radio-at-souplesse-monster-sounds?si=cdf8297283e14a11bb781e5b825e9d8a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Focus on "Deep Medi Musik" with Prest & Xl Regular<span class="dnt">Studio Lampo, Rome</span><span class="dmy">30.3.2024</span></p>
+    </div>
+    <div id="ev-054" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/skyapnea-x-rhizome-radio-at-souplesse-monster-sounds?si=639dba889d324d97afd607f0fd8efdaa&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Skyapnea<span class="dnt">Studio Lampo, Rome</span><span class="dmy">30.3.2024</span></p>
+    </div>
+    <div id="ev-053" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/focus-on-scuffed-recordings-early-releases-with-bmbx?si=8d5d526095a84766a5f60dc6124bdbda&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Focus on Scuffed Recordings: Early Releases with Bmbx<span class="dnt">Avanvera, Rome</span><span class="dmy">28.3.2024</span></p>
+    </div>
+    <div id="ev-052" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pecci-6-marzo-avanvera?si=8427f3ef4c11473f918fec986bb26820&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">TNT anniversary celebration by Giulio Pecci<span class="dnt">Avanvera, Rome</span><span class="dmy">6.3.2024</span></p>
+    </div>
+    <div id="ev-051" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/6U0G4z-MNa4?si=vZIZrC6Dax5QZOPl" target="_blank">YT</a></p>
+      <p class="did">Exotic Sin<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">21.4.2024</span></p>
+    </div>
+    <div id="ev-050" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/St5_ik23Elk?si=g4FiiMGCkWWe-apU" target="_blank">YT</a></p>
+      <p class="did">Rosso Polare<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">21.4.2024</span></p>
+    </div>
+    <div id="ev-049" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/basilica-21-aprile-sagome-djset?si=cd65afb45b3e428f9624f89fe5919cf9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Sagome<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">21.4.2024</span></p>
+    </div>
+    <div id="ev-048" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/1jlD25i2pyY?si=oRhDU6_sQaTbUNro" target="_blank">YT</a></p>
+      <p class="did">Fiesta en el Vacio<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">21.1.2024</span></p>
+    </div>
+    <div id="ev-046" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/vb3ctQYpl9A?si=C1GsElaF-HjLFp1N" target="_blank">YT</a></p>
+      <p class="did">Megabasse<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">21.1.2024</span></p>
+    </div>
+    <div id="ev-045" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/tom-all-night-flight-x-rhizome-radio-at-teatro-basilica-roma-1?si=fccb34f8b0e94e2d9762922cc15329f4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/KZiyrxJr9Sw?si=kSP7AZEh7111eBF8" target="_blank">YT</a></p>
+      <p class="did">Tom All Night Flight<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">21.1.2024</span></p>
+    </div>
+    <div id="ev-044" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/jabu-x-rhizome-radio-at-fischio-roma?si=5528e298fd914349b3b74d9cc8c0a28b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/-ijvhxfQ9no?si=f9R6XS0n6CaTGmuT" target="_blank">YT</a></p>
+      <p class="did">Jabu<span class="dnt">Fischio, Rome</span><span class="dmy">17.2.2024</span></p>
+    </div>
+    <div id="ev-043" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/last-name-x-rhizome-radio-at?si=7270edeee19a49f19a430c3f729bc06b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/-l8CYf5WdCQ?si=WdaMbz6PgKg3cT59" target="_blank">YT</a></p>
+      <p class="did">Last Name<span class="dnt">Fischio, Rome</span><span class="dmy">30.12.2023</span></p>
+    </div>
+    <div id="ev-042" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/abraham-parker-x-rhizome-radio?si=10240baf74944ae88b1a9d38458ae2ab&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/V-0QbYsWUHM?si=VxXhgi7TqfX_BF4o" target="_blank">YT</a></p>
+      <p class="did">Abraham Parker<span class="dnt">Fischio, Rome</span><span class="dmy">30.12.2023</span></p>
+    </div>
+    <div id="ev-041" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/ZWyNxR0Dq9E?si=fBh7O-7kJ25g3mTz" target="_blank">YT</a></p>
+      <p class="did">Nueen Live<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">19.11.2023</span></p>
+    </div>
+    <div id="ev-040" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/4PhYTpb5NmQ?si=LerdviPf2Zqf1qT2" target="_blank">YT</a></p>
+      <p class="did">Ben Bondy Live<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">19.11.2023</span></p>
+    </div>
+    <div id="ev-039" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/special-guest-dj-x-rhizome-radio-at-teatro-basilicaroma?si=883f32a02294486a93f5163e59295121&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/T6ELQ9ZVfQg?si=0FYVCo20n8MFUcf2" target="_blank">YT</a></p>
+      <p class="did">Special Guest Dj<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">19.11.2023</span></p>
+    </div>
+    <div id="ev-038" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/yeye-x-rhizome-radio-at-fischio?si=6f5ebc2a48294dafac13b93095ae94f0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/Ubu9X3uiai4?si=wBUtpzxIgKDRzmYp" target="_blank">YT</a></p>
+      <p class="did">Yeye<span class="dnt">Fischio, Rome</span><span class="dmy">1.11.2023</span></p>
+    </div>
+    <div id="ev-037" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/yWyOGNR4Xdg?si=BWB2xXCGsPqV1Zuo" target="_blank">YT</a></p>
+      <p class="did">Andrea Messina Live<span class="dnt">Tenuta Tor di Sordi, Rome</span><span class="dmy">7.6.2023</span></p>
+    </div>
+    <div id="ev-036" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/i6q_pXp2DTk?si=Ufe0P3jmlsRuTnX9" target="_blank">YT</a></p>
+      <p class="did">Francesco Maria B2B Andrea Saba<span class="dnt">Tenuta Tor di Sordi, Rome</span><span class="dmy">7.6.2023</span></p>
+    </div>
+    <div id="ev-035" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/the-sound-of-paris-oracle-x-rhizome-radio-at-paris-oracle?in=rhizomerm/sets/october-mondays-at-paris&si=308a5539efe44ae7a31cfc5fa58766da&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/d6-3dc2G0fk?si=StuUiqHLGfoe2nS5" target="_blank">YT</a></p>
+      <p class="did">The Sound of Paris Oracle <span class="dnt">Paris Oracle, Rome</span><span class="dmy">30.10.2023</span></p>
+    </div>
+    <div id="ev-034" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/simona-beat-x-rhizome-radio-at-paris-oracle?in=rhizomerm/sets/october-mondays-at-paris&si=a921b2c223ab402fab9f65f1b7f51e22&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/kMxzKTy7OGA?si=37vii0BC3K-gMHPb" target="_blank">YT</a></p>
+      <p class="did">Simona Beat<span class="dnt">Paris Oracle, Rome</span><span class="dmy">23.10.2023</span></p>
+    </div>
+    <div id="ev-033" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/liugi-paris-x-rhizome-radio-at-paris-oracle?in=rhizomerm/sets/october-mondays-at-paris&si=c336ec316a1b40f4b8f85bcdb00a7a84&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/yumM7XwURbQ?si=-l-5k2UEDikj3j2l" target="_blank">YT</a></p>
+      <p class="did">Liugi<span class="dnt">Paris Oracle, Rome</span><span class="dmy">16.10.2023</span></p>
+    </div>
+    <div id="ev-032" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/marco-folco-x-rhizome-radio-paris-oracle?in=rhizomerm/sets/october-mondays-at-paris&si=2fdf81492938422a91cd18eecab45d34&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/Ha0eoIMO7TM?si=ICDiMZQAlz2kPXWR" target="_blank">YT</a></p>
+      <p class="did">Marco Folco<span class="dnt">Paris Oracle, Rome</span><span class="dmy">9.10.2023</span></p>
+    </div>
+    <div id="ev-031" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/chicco-musica-x-rhizome-radio-at-paris-oracle?in=rhizomerm/sets/october-mondays-at-paris&si=838768bffd654f1d94f05b22d65cf292&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/wFX3ajVQbcM?si=AyVgUi92Uw3ULAb6" target="_blank">YT</a></p>
+      <p class="did">Chicco Musica <span class="dnt">Paris Oracle, Rome</span><span class="dmy">2.10.2023</span></p>
+    </div>
+    <div id="ev-030" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/will-hofbauer-x-rhizome-radio-at-roma-europa-festival-x-fischio?si=9207711049444bdaa062552dfd1754b5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="" target="_blank">YT</a></p>
+      <p class="did">Will Hofbauer<span class="dnt">Roma Europa Festival, Rome</span><span class="dmy">29.9.2023</span></p>
+    </div>
+    <div id="ev-029" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/selezione-naturale-x-rhizome-radio-at-soffio-fregene?si=73a88a0fc6694388b3baeb35be713081&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/U26gEbewM1M?si=jYRQ9pPeGjVorX45" target="_blank">YT</a></p>
+      <p class="did">Selezione Naturale<span class="dnt">Soffio, Fregene</span><span class="dmy">16.9.2023</span></p>
+    </div>
+    <div id="ev-028" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/joaquim-x-rhizome-radio-at-fischio?si=8ee0e89a3ed740db84dca7d7b52424a0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Joaquim Quadros <span class="dnt">Fischio, Rome</span><span class="dmy">14.9.2023</span></p>
+    </div>
+    <div id="ev-027" class="evnt">
+      <p class="did">Prest, D.K. Live, Rainy Miller Live, K Means <span class="dnt">Invincible Fest, Rome</span><span class="dmy">10.9.2023</span></p>
+    </div>
+    <div id="ev-026" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/cola-ren-x-rhizome-radio-at-soffio-fregene?si=70ea6bef4f87452db8b29e20ef0909d8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/BVNjVCc6mmE?si=X-iXzE4tazkER17j" target="_blank">YT</a></p>
+      <p class="did">Cola Ren<span class="dnt">Soffio, Fregene</span><span class="dmy">11.8.2023</span></p>
+    </div>
+    <div id="ev-025" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/rawmance-b2b-mostky-x-rhizome-radio-saturdays-morning-at-fischio-roma?si=41711f1bf55e43a49718c4f5d8ccf891&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/n5o5q1cK6Ao?si=0Gh0ee3d865BACIs" target="_blank">YT</a></p>
+      <p class="did">Rhizome Saturday Morning: Rawmance B2B Mostly a Dancer<span class="dnt">Fischio, Rome</span><span class="dmy" style="width: 60%;">17.6.2023</span></p>
+    </div>
+    <div id="ev-024" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/focus-on-rs-fischio-17giugno?si=6a65d68e9af84198b8cae66d113171dc&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Rhizome Saturday Morning: Focus on R&amp;S Records<span class="dnt">Fischio, Rome</span><span class="dmy">17.6.2023</span></p>
+    </div>
+    <div id="ev-023" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/ohRhDrI-WYA?si=Fa029XWYtCYJkVWo" target="_blank">YT</a></p>
+      <p class="did">Rhizome Saturday Morning: Jomoon Live<span class="dnt">Fischio, Rome</span><span class="dmy">3.6.2023</span></p>
+    </div>
+    <div id="ev-022" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/marco-caizzi-x-rhizome-radio-at-fischioroma?si=c61620d6c7cc4e4cbd0c2aae4c4cf40d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/xElum9Dr5YU?si=B3O4MQdJGc-cxEYl" target="_blank">YT</a></p>
+      <p class="did">Rhizome Saturday Morning: Marco Caizzi <span class="dnt">Fischio, Rome</span><span class="dmy">3.6.2023</span></p>
+    </div>
+    <div id="ev-020" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/francesco-argento-x-rhizome-radio-saturdays-morning-at-fischio-roma?si=61493ff127ee4c1aa8d832a263eacc2d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
+      <p class="did">Rhizome Saturday Morning: Francesco Argento <span class="dnt">Fischio, Rome</span><span class="dmy">27.5.2023</span></p>
+    </div>
+    <div id="ev-019" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/focus-on-piero-umiliani?si=532003fa50d44d75be81b8ce4471b4e7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a> <a href="https://youtu.be/pabbFsjn4Bs?si=qw41r8dTTM6VkY-n" target="_blank">YT</a></p>
+      <p class="did">Rhizome Saturday Morning: Focus on Piero Umiliani<span class="dnt">Fischio, Rome </span><span class="dmy">27.5.2023</span></p>
+    </div>
+    <div id="ev-018" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/leonar-x-rhizome-radio" target="_blank">SC</a> <a href="https://youtu.be/_GvtMetwAmg?si=il1Lf1f4_6uD7N6H" target="_blank">YT</a></p>
+      <p class="did">Rhizome Saturday Morning: Leonar<span class="dnt">Fischio, Rome</span><span class="dmy">6.5.2023</span></p>
+    </div>
+    <div id="ev-017" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/go1tjXVk11pWwhFY9" target="_blank">SC</a> <a href="https://youtu.be/0OErQnEa_y0?si=MIQWRK7tEuWs3mC0" target="_blank">YT</a></p>
+      <p class="did">Rhizome Saturday Morning: Prest<span class="dnt">Fischio, Rome</span><span class="dmy">6.5.2023</span></p>
+    </div>
+    <div id="ev-016" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/4Auic92nE69UJ23DA" target="_blank">SC</a></p>
+      <p class="did">Rhizome Saturday Morning: Focus on AD 93<span class="dnt">Fischio, Rome</span><span class="dmy">6.5.2023</span></p>
+    </div>
+    <div id="ev-015" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/tK3Aw8XgbNU?si=jnHKyteF2Z-giGMq" target="_blank">YT</a></p>
+      <p class="did">Portraits 2023: Luca Collepiccolo<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">12.3.2023</span></p>
+    </div>
+    <div id="ev-014" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/5nnGTRFhjWg?si=Z2KJwepS90CBdKoF" target="_blank">YT</a></p>
+      <p class="did">Portraits 2023: Panoram Live<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">5.3.2023</span></p>
+    </div>
+    <div id="ev-013" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/LY3G_1cekbw?si=sa80hKx9oQkieVr_" target="_blank">YT</a></p>
+      <p class="did">Portraits 2023: Sara Berts Live<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">26.2.2023</span></p>
+    </div>
+    <div id="ev-012" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/-08vvKMU9Uo?si=4P0i3dKyL_J81i6G" target="_blank">YT</a></p>
+      <p class="did">Adi (Ufonic)<span class="dnt">Ultrasuoni, Rome</span><span class="dmy">24.2.2023</span></p>
+    </div>
+    <div id="ev-011" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/iOKKfFqhd6s?si=nWlUk8WEBheG0vEY" target="_blank">YT</a></p>
+      <p class="did">Portraits 2023: Daved Saved Live<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">19.2.2023</span></p>
+    </div>
+    <div id="ev-010" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/LCfXdK8zynbMje24A" target="_blank">SC</a></p>
+      <p class="did">Allegra De Angelis<span class="dnt">Sota, Rome</span><span class="dmy">4.2.2023</span></p>
+    </div>
+    <div id="ev-009" class="evnt">
+      <p class="scyt"><a href="https://youtu.be/Ez-IlcXYknU?si=wmS3-o3yZVXc_FpF" target="_blank">YT</a></p>
+      <p class="did">Portraits 2023: L'Ora Blu Live<span class="dnt">Teatro Basilica, Rome</span><span class="dmy">22.1.2023</span></p>
+    </div>
+    <div id="ev-008" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/Jv9WF1Vh2DNryVCE6" target="_blank">SC</a> <a href="https://youtu.be/oTVzHME-BOU?si=e0aaAvk8AFEMVZl2" target="_blank">YT</a></p>
+      <p class="did">Dj Sundae<span class="dnt">Fischio, Rome</span><span class="dmy">6.1.2023</span></p>
+    </div>
+    <div id="ev-007" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/GpvLWsU7uVCumXBM9" target="_blank">SC</a> <a href="https://youtu.be/3bN4WA15AQs?si=_17SA-LCs5HT1oLb" target="_blank">YT</a></p>
+      <p class="did">Pato (Hidden Sounds)<span class="dnt">Hidden Sounds, London</span><span class="dmy">19.12.2022</span></p>
+    </div>
+    <div id="ev-006" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/enduPYhbKD48k3dGA" target="_blank">SC</a></p>
+      <p class="did">Giulio Pecci<span class="dnt">Feed, Amsterdam</span><span class="dmy">16.12.2022</span></p>
+    </div>
+    <div id="ev-005" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/pbKssE9ww25M4BBN8" target="_blank">SC</a></p>
+      <p class="did">Rhizome goes to UK: Prest<span class="dnt">Soup, Manchester</span><span class="dmy">16.12.2022</span></p>
+    </div>
+    <div id="ev-004" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/ZtPmEG7k6C7ySffL7" target="_blank">SC</a></p>
+      <p class="did">Rhizome goes to UK: Bmbx<span class="dnt">Soup, Manchester</span><span class="dmy">16.12.2022</span></p>
+    </div>
+    <div id="ev-003" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/F6Cg6ckFECNMKjRdA" target="_blank">SC</a></p>
+      <p class="did">Rhizome goes to UK: Luca Quartarone<span class="dnt">Soup, Manchester</span><span class="dmy">16.12.2022</span></p>
+    </div>
+    <div id="ev-002" class="evnt">
+      <p class="scyt"><a href="" target="_blank">SC</a></p>
+      <p class="did">Rhizome goes to UK: Claudio Maura<span class="dnt">Soup, Manchester</span><span class="dmy">16.12.2022</span></p>
+    </div>
+    <div id="ev-001" class="evnt">
+      <p class="scyt"><a href="https://on.soundcloud.com/NqLK59gismT5bRrL8" target="_blank">SC</a> <a href="https://youtu.be/Oik-6cjE-rE?si=8yWPKSNqixOSDYfq" target="_blank">YT</a></p>
+      <p class="did">Luca Bigote<span class="dnt">Ciao, Rome</span><span class="dmy">8.12.2022</span></p>
+    </div>
+  </section>
+
+  <!-- editorial -->
+  <section id="ed" style="display: none;">
+    <article id="ed-012" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/talk-hyperacustica?in=rhizomerm/sets/live-talk" target="_blank">SC</a></p>
+      <a class="tl">Talk with Hyperacustica<span class="dnt">Luca Quartarone e Leonardo Metz</span><span class="dmy">26.6.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Una chiacchierata con il collettivo romano di Hyperacustica</p>
+      </div>
+    </article>
+    <article id="ed-011" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/jam-factory-rhizome?in=rhizomerm/sets/live-talk" target="_blank">SC</a></p>
+      <a class="tl">Jim Factory: festival preview<span class="dnt">Vincenzo Fesi</span><span class="dmy">28.11.2024</span></a>
+    </article>
+    <article id="ed-010" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/aspettare-conferma-prima-di-pubblicare-export-montro-teardo-eno-rhizome?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/1ZdEdBbKOlTPaoKCdR3p06?si=152eb10825a043da" target="_blank">SP</a></p>
+      <a class="tl">Brian Eno, Discreet Music (1975-1982)<span class="dnt">Fab Montr&oacute; e Theo Teardo</span><span class="dmy">21.9.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Discreet Music di Brian Eno compie 50 anni. Negli spazi di Rhizome, Fabrizio Montr&ograve; insieme a Teho Teardo, musicista e compositore, ricostruiscono le coordinate dell'universo di Brian Eno e di come la sua ricerca di quegli anni abbia ridisegnato le connessioni musicali e il modo di intendere e di interpretare la Musica fino ai nostri giorni.
+        <p class="nt">Brian Eno<span class="tab">Discreet Music (Discreet Music, 1975)</span><br>
+        Brian Eno &amp; Robert Fripp<span class="tab">Evening Star  (Evening Star, 1975)</span><br>
+        Brian Eno &amp; Cluster<span class="tab">Ho Renomo (Cluster & Eno, 1977)</span><br>
+        David Bowie<span class="tab">Subterraneans (Low, 1977)</span><br>
+        Brian Eno<span class="tab">By This River (Before and After Science, 1977)</span><br>
+        Brian Eno<span class="tab">1/1 - (Music for Airports, 1978)</span><br>
+        Brian Eno &amp; Harold Budd<span class="tab">The Plateaux of Mirror (Ambient 2: The Plateaux of Mirror, 1980)</span><br>
+        Brian Eno<span class="tab">Dunwich Beach, Autumn 1960 (Ambient 4: On Land, 1982)</span></p>
+      </div>
+    </article>
+    <article id="ed-009" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/albini-talk?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/5MQnwDbFOitflrgERIzsGh?si=84492a935cde4b64" target="_blank">SP</a></p>
+      <a class="tl">Steve Albini is floating in space<span class="dnt">Emiliano Colasanti e Cristiano Luciani</span><span class="dmy">18.7.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Una specie di tributo a Steve Albini #thankyoustevealbini</p>
+      </div>
+    </article>
+    <article id="ed-008" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/mirko-book-presentation?in=rhizomerm/sets/live-talk" target="_blank">SC</a></p>
+      <a class="tl">moments like these never last <span class="dnt">@mirkojira @lil.sandrina @ognitantoscrivocose</span><span class="dmy">30.11.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>TALK ABOUT ADOLESCENCE</p>
+      </div>
+    </article>
+    <article id="ed-007" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/la-visione-techno-con-andrea-benedetti-live-talk?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/1cdWRpkkzs4CmeSosNRueR?si=f71e11b6eb174011" target="_blank">SP</a></p>
+      <a class="tl">La Visione Techno: umanit&agrave;, neo-macchine, futuro<span class="dnt">Fab Montr&oacute; e Andrea Benedetti</span><span class="dmy">29.11.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Rhizome e Fab Montr&ograve; ospitano Andrea Benedetti con il suo libro &quot;La Visione Techno&quot; edito da Agenzia X. Un longform che racconta la storia della techno e dell'house attraverso le parole di chi ha visto nascere ed affermarsi le scene di Detroit e di Chicago negli anni 90 e la musica dei DJ e dei producer pi&ugrave; rappresentativi che la rendono ancora attuale e viva.</p>
+      </div>
+    </article>
+    <article id="ed-006" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/deblasio-arte-distruttiva-rhizome?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/4gAEZ9nVnAMzZEllkJ5872?si=d92070fff7924681" target="_blank">SP</a></p>
+      <a class="tl">Arte Autodistruttiva<span class="dnt">Moderatore: Carolina Latour. Ospiti: Jacopo De Biasio, Daniela Cotimbo e Nicolas Martino</span><span class="dmy">14.12.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Rhizome ospita la presentazione del libro &quot;Arte Autodistruttiva&quot; di Jacopo De Biasio edito da Postmedia Books.</p>
+      </div>
+    </article>
+    <article id="ed-005" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/racconti-per-suoni-rhizome?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/6zk4VIPhoCX6lQAZmapcqF?si=c6ff903b95f84788" target="_blank">SP</a></p>
+      <a class="tl">Racconti per suoni<span class="dnt">Moderatore: Claudio Maura. Ospiti: Luigi Di Capua, Federico Bisozzi</span><span class="dmy">7.12.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Rhizome festeggia due anni dalla sua nascita ed ospita il regista Luigi Di Capua insieme al compositore Federico Bisozzi. Racconti per Suoni &egrave; una chiacchierata tra amici in cui si parla del rapporto tra regista e compositore per cinema.</p>
+      </div>
+    </article>
+    <article id="ed-004" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/pvc_2112?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/51TUQNjH7nOrNX1rCoCSS5?si=e8e1cd6b8aca43c0" target="_blank">SP</a></p>
+      <a class="tl">PVC: i migliori dischi del 2024<span class="dnt">Emiliano Colasanti e Daniele Manusia</span><span class="dmy">18.12.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Rhizome ospita la puntata finale del 2024 di PVC dedicata ai migliori dischi del 2024.  Con Emiliano Colasanti e Daniele Manusia.</p>
+      </div>
+    </article>
+    <article id="ed-003" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/narvhal-talk?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/5ggNOtOKVy6bGOYKcXYqWr?si=2e1709ecb23643d0" target="_blank">SP</a></p>
+      <a class="tl">INTERSPAZI<span class="dnt">Narhval Edizioni</span><span class="dmy">13.12.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Rhizome ospita Narvhal Edizioni con il suo primo appuntamento del format Interspazi, un dialogo tra musica e letteratura sul filo delle recenti pubblicazioni della Narhval Edizioni. Con brani selezionati, ispirati alle suggestioni dei testi.</p>
+      </div>
+    </article>
+    <article id="ed-002" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/montro-musica-per-immagini?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/3oqAG9ONH6D9A4RxhvU97F?si=f4b71be7ddca4ea0" target="_blank">SP</a></p>
+      <a class="tl">Musica Elettronica per Immagini<span class="dnt">Fab Montr&ograve; e Pierpaolo De Sanctis (Four Files Records)</span><span class="dmy">11.1.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Da Rhizome (Roma), un viaggio attraverso la musica elettronica italiana per immagini: esploriamo l'opera di artisti iconici come Piero Umiliani, Gianni Safred, Gluliano Sorgini, Fabio Fabor e molti altri.<br>In questo longform di Fab MonTr&ograve; con la partecipazione di Pierpaolo De Sanctis, fondatore della Four Flies Records, scopriamo come questi pionieri compositori di colonne sonore degli anni 60 e 70 abbiano definito un'epoca e influenzato generazioni future.</p>
+        <p class="nt">Giovanni Fusco<span class="tab">Astrale (Deserto Rosso OST, 1964)</span><br>
+        Piero Umiliani<span class="tab">Officina Stellare (1975)</span><br>
+        Gianni Safred<span class="tab">Automation Age (Electronic Designs, 1977)</span><br>
+        Gianni Safred<span class="tab">Jazz Computer (Futuribile, 1978)</span><br>
+        Giuliano Sorgini<span class="tab">Lost in The Fog (Unreleased da Occulto, 1974)</span><br>
+        Fabio Fabor<span class="tab">Gioiello (Aquarium, 1980)</span><br>
+        Giampiero Boneschi<span class="tab">Dune (Elettrorama, 1976)</span><br>
+        Farlocco (Stefano Torossi)<span class="tab">Superpotenza (Tecnologia, 1974)</span><br>
+        Corviria (Vittoria Corona)<span class="tab">Evil's Eyes (Evil's Suite, Descriptive, 1980)</span></p>
+      </div>
+    </article>
+    <article id="ed-001" class="art">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/export-atlas-mag?in=rhizomerm/sets/live-talk" target="_blank">SC</a> <a href="https://open.spotify.com/episode/4JnhK1Bq1j3NKKeqtbQxbA?si=9a9d3de9803c429f" target="_blank">SP</a></p>
+      <a class="tl">Servono ancora i maestri<span class="dnt">Atlas</span><span class="dmy">30.10.2024</span></a>
+      <div class="bd" style="display: none;">
+        <p>Da Rhizome (Roma) in collaborazione con Italiacamp ed Atlas Mag, un talk con Raffaele Alberto Ventura e Guido Vitiello per riflettere sui modelli formativi e quelli di emulazione, il rapporto con i social network e quello tra le generazioni.</p>
+      </div>
+    </article>
+    <article id="ed-013" class="art">
+      <p class="scyt"><a href="https://youtu.be/c8KdxSEtd8M?si=CaSP8yJxvN5EIIV4" target="_blank">YT</a></p>
+      <a class="tl">Rhizome at Gaeta Jazz Festival 2023<span class="dnt">Giulio Pecci e Rosa Brunello</span><span class="dmy">10-14.8.2023</span></a>
+    </article>
+    <article id="ed-014" class="art">
+      <p class="scyt"><a href="https://youtu.be/FwNeI0vnuog?si=9qBrXKdYL0aR4xEj" target="_blank">YT</a></p>
+      <a class="tl">Rhizome at Gaeta Jazz Festival 2023<span class="dnt">Giulio Pecci e Gianluca Petrella</span><span class="dmy">10-14.8.2023</span></a>
+    </article>
+    <article id="ed-015" class="art">
+      <p class="scyt"><a href="https://youtu.be/2bmUYYj7_Iw?si=1MTxwhhSGqjfpl-m" target="_blank">YT</a></p>
+      <a class="tl">Rhizome at Gaeta Jazz Festival 2023<span class="dnt">Giulio Pecci e Theon Cross</span><span class="dmy">10-14.8.2023</span></a>
+    </article>
+  </section>
+
+  <!-- products -->
+  <section id="pd" style="display: none;" onclick="startRandomPosition('.mg')">
+    <p class="txt"><a href="mailto:hello@rhizomerm.com">We ship to Italy and Europe, click for information on available products.</a></p>
+    <div id="cnv">
+      <div class="mg"><img src="data/img/prd/rr-web-11.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-10.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-9.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-8.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-7.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-6.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-5.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-4.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-3.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-2.jpg"></div>
+      <div class="mg"><img src="data/img/prd/rr-web-1.jpg"></div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="ab" style="display: none;" onclick="startRandomPosition('.mgg')">
+    <p class="txt">Rhizome is a multifuncional space based in Rome. From December 2022, the reality has curated events and stages in both national and international occasions, providing artistic direction, audio/video support for live and djset, with the aim of creating artistic, cultural and multimedia content. In June 2024, with the opening of a physical location, the project has expanded through an exhibition and sales space with books, cassettes, vinyls, refreshments and more.</p>
+    <div id="anv">
+      <div class="mgg"><img src="data/img/str/rr-web-12.jpg"></div>
+      <div class="mgg"><img src="data/img/str/rr-web-13.jpg"></div>
+      <div class="mgg"><img src="data/img/str/rr-web-14.jpg"></div>
+      <div class="mgg"><img src="data/img/str/rr-web-15.jpg"></div>
+      <div class="mgg"><img src="data/img/str/rr-web-16.jpg"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
