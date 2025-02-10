@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rhizome</title>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
   <link rel="stylesheet" href="main.css">
   <link rel="icon" type="image/x-icon" href="data/rr-fav.ico">
 </head>
@@ -12,15 +13,13 @@
 <body>
   <!-- header -->
   <header id="hd">
-    <p><a onclick="tglCl()">Rhizome</a></p>
+    <p id="rr"><a onclick="tglCl()">Rhizome</a></p>
     <nav id="cnt">
       <p><a onclick="tglEv()">Events</a></p>
       <p><a onclick="tglEd()">Editorial</a></p>
       <p><a onclick="tglPd()">Products</a></p>
       <p><a onclick="tglAb()">About</a></p>
     </nav>
-
-    <!--<p id="crdt">Design: <a href="mailto:">Giovanni Difronzo</a> and <a href="mailto:">Felipe Minicucci</a>. Web development: <a href="mailto:">Felipe Minicucci</a>.</p>-->
   </header>
 
   <!-- contacts + calendar -->
@@ -63,9 +62,11 @@
       <p class="did">Giulio Pecci w/ MOESHA 13<span class="dnt">Rhizome, Rome</span><span class="dmy">18.1.2025</span></p>
     </div>
     <div id="ev-132" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/benassi_mule_rhizome?si=f3b5cdf1188342a68a269c328b4210d9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
       <p class="did">Mule Musiq Release Party: Leo Benassi<span class="dnt">Rhizome, Rome</span><span class="dmy">17.1.2025</span></p>
     </div>
     <div id="ev-131" class="evnt">
+      <p class="scyt"><a href="https://soundcloud.com/rhizomerm/dada_mule_rhizome?si=ea138aa2a8414cf999e67d9738aaeac8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SC</a></p>
       <p class="did">Mule Musiq Release Party: Lorenzo Dada<span class="dnt">Rhizome, Rome</span><span class="dmy">17.1.2025</span></p>
     </div>
     <div id="ev-130" class="evnt">
@@ -718,6 +719,8 @@
       <div class="mgg"><img src="data/img/str/rr-web-15.jpg"></div>
       <div class="mgg"><img src="data/img/str/rr-web-16.jpg"></div>
     </div>
+
+    <p id="crdt">Graphic design<span class="dnt"><a href="mailto:">Giovanni Difronzo</a> and <a href="mailto:">Felipe Minicucci</a></span><br>Web development<span class="dnt"><a href="mailto:">Felipe Minicucci</a></span></p>
   </section>
 
   <script src="script.js"></script>
