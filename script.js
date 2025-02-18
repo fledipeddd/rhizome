@@ -1,9 +1,9 @@
  // p5
 let circles = [];
 let numCircles = 1;
-let margin = 15;
-let repulsionStrength = 200;
-let totCircles = 1500;
+let margin = 27;
+let repulsionStrength = 600;
+let totCircles = 700;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -65,7 +65,7 @@ function windowResized() {
 
 function generateCircles(count) {
   for (let i = 0; i < count; i++) {
-    addCircle(random([22, 25]));
+    addCircle(40);
   }
 }
 
@@ -94,7 +94,7 @@ function makeCirclesReappear() {
       y: random(margin, height - margin),
       vx: 0,
       vy: 0,
-      size: random([15, 22, 25])
+      size: random([36, 40, 44])
     });
   }
   circles = circles.concat(newCircles);
